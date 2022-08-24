@@ -3,11 +3,13 @@ import React from 'react';
 //Aquí estamos recibiendo props desde el componente Form
 //El prop(propiedad) "todo" son los valores del array de Form
 //Los otros 2, "index" es un valor entero y "deleteTodo" es una función creada también en Form
+//Con el otro h3 estamos trayendo el valor del segundo input
 const Todo = ({todo, index, deleteTodo}) => {
     return (
         <>
             <div className='list'>
-                <h3>{todo}</h3>
+                <h3>{todo.cant}-</h3>
+                <h3>{todo.todo}</h3>
                 <button className='btn-delete' onClick={() => deleteTodo(index)}>X</button>
             </div>
         </>

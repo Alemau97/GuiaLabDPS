@@ -6,9 +6,9 @@ const App = () => {
   return (
     <div className="App">
       <div className="App-content">
-        <p>
-          AQUÍ HAREMOS NUESTRA LISTA DE COMPRAS
-        </p>
+        <h1>
+          Lista de compras
+        </h1>
         <Form/>
       </div>
     </div>
